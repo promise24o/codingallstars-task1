@@ -181,12 +181,10 @@ body {
 
 /* Container to hold all cards in one place */
 .card-area {
-    align-items: center;
     display: flex;
-    flex-wrap: nowrap;
-    height: 100%;
-    justify-content: space-evenly;
-    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem;
 }
 
 /* Card ============================================*/
@@ -195,9 +193,7 @@ body {
 .card-section {
     align-items: center;
     display: flex;
-    height: 100%;
     justify-content: center;
-    width: 100%;
 }
 
 /* A container to hold the flip card and the inside page */
@@ -367,4 +363,22 @@ body {
     color: #fff;
     padding: 1rem;
     text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        /* One card per row */
+        margin: 0.5rem 0;
+        /* Remove horizontal margin */
+    }
+}
+
+/* Adjust styles for screens up to 768px wide */
+@media (max-width: 768px) {
+    .card-section {
+        width: 100%;
+        /* Set width to 100% on small screens */
+    }
 }
